@@ -5,3 +5,5 @@ To play it is very simple!!! Simply install the requirements in requirements.txt
 You may use virtualenv to install dependencies seperately, keep it cleeean ;)
 
 Any suggestions or ideas please let me know!
+
+** I was thinking a global scoreboard or something like that, is that something you might be interested in? ;)
