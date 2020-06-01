@@ -136,7 +136,7 @@ def play_game():
             user_input_placeholder = "\nYour Answer: "
             user_input = input(user_input_placeholder).strip()
 
-            while user_input.strip() == '':
+            while user_input == '':
                 user_input = input(user_input_placeholder)
             
             while user_input == 'score':
@@ -145,8 +145,13 @@ def play_game():
 
             try:
                 int_user_answer = int(user_input.strip())
+                while int_user_answer > 4:
+                    int_user_answer = int(input("\nSelect a number from 1 to 4 to answer\n").strip())
             except:
                 int_user_answer = 'Fuck'
+                if user_input != "quit" or user_input != "exit":
+                    print("\nSelect a number from 1 to 4 to answer")
+                    user_input = input("\n").strip()
 
             if user_input == "quit" or user_input == 'exit':
                 print(user_input.strip())
